@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      weight: 'enter your weight',
+      height: 'enter your height'
+    }
+  }
+
   render() {
     return (
       <div className="App">
