@@ -5,8 +5,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      weight: 'enter your weight',
-      height: 'enter your height'
+      weight: '',
+      height: ''
     }
   }
 
