@@ -4,7 +4,7 @@ import './App.css';
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       weight: '',
       height: '',
@@ -40,4 +40,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
