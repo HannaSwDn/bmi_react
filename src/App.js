@@ -23,12 +23,12 @@ class App extends Component {
         />
         
         <div>
-          <label id="weightLabel">Weight in kg</label>
+          <label id="weightLabel">Weight(kg)</label>
           <input name="weight" value={this.state.weight} onChange={(e) => this.setState({weight: e.target.value})} />
         </div>
 
         <div>
-          <label id="heightLabel">Height in cm</label>
+          <label id="heightLabel">Height(cm)</label>
           <input name="height" value={this.state.height} onChange={(e) => this.setState({height: e.target.value})} />
         </div>
 

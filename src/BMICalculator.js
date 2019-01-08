@@ -24,7 +24,11 @@ export const bmiCalculation = (weight, height, method) => {
   if (method == 'metric') {
     bmi = weight / (height / 100 * height / 100)
     finalBmi = bmi.toFixed(2)
+    document.getElementById('weightLabel').innerHTML = 'Weight(kg)'
+    document.getElementById('heightLabel').innerHTML = 'Height(cm)'
   } else if (method == 'imperial') {
+    document.getElementById('weightLabel').innerHTML = 'Weight(lb)'
+    document.getElementById('heightLabel').innerHTML = 'Height(in)'
     bmi = (weight / (height * height)) * 703
     finalBmi = bmi.toFixed(2)
   }
