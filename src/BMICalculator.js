@@ -3,7 +3,6 @@ export const bmiCalculation = (weight, height, method) => {
   parseFloat(height)
   let bmi
   let finalBmi
-  let BMIMessage
 
   weight = isNaN(weight) ? 0 : weight
   height = isNaN(height) ? 0 : height
