@@ -22,4 +22,16 @@ describe('BMI Converter', () => {
             await expect(page).toMatch('BMI: 19.62, result: Normal')
         })
     })
+
+    describe('Imperial method', async () => {
+        beforeEach(async () => {
+            await page.click('button[name="imperial"]')
+            await page.type('input[name="weight"]', '143')
+            await page.type('input[name="height"]', '72')
+        })
+
+        it('displays BMI message', async () => {
+            await expect(page).toMatch('BMI: 19.39, result: Normal')
+        })
+    })
 })
