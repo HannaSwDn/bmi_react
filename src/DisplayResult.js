@@ -15,6 +15,7 @@ class DisplayResult extends Component {
     render() {
         return (
             <div id="result">
+                <p>BMI Calculator</p>
                 {this.calculate()}
             </div>
         )
